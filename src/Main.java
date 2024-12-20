@@ -19,5 +19,22 @@ public class Main {
         String imcFormated = df.format(imc);
 
         System.out.println(imcFormated);
+
+        //avaliação do imc
+        if (imc < 18.5) {
+            System.out.println("Seu imc é " + imcFormated + " e você está muito magro(a)");
+        } else if (imc >= 18.5 && imc < 25) {
+            System.out.println("Seu imc é " + imcFormated + " e você está no peso correto.");
+        } else if (imc >=25 && imc < 30) {
+            System.out.println("Seu imc é " + imcFormated + " e você está acima do peso!");
+        } else if (imc > 30 && imc < 35) {
+            System.out.println("Seu imc é " + imcFormated + " e você está com obesidade grau 1!");
+        } else if (imc >=35 && imc < 40) {
+            System.out.println("Seu imc é " + imcFormated + " e você está com obesidade grau 2!!");
+        } else if (imc >= 40) {
+            System.out.println("Seu imc é " + imcFormated + " e você está com obesidade grau 3!!!");
+        } else {
+            System.out.println("Ocorreu algum erro....");
+        }
     }
 }
